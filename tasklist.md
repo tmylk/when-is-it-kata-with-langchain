@@ -1,7 +1,10 @@
-Over all task:
-What day is today? How many days are left until the next Berlin Data Crafters meetup?
+Overall task: Create a tool to answer questions where the answer to that question is a date.
 
-- [x] Output data format first draft
+- [ ] API keys
+  - [ ] Put your OpenAI and CohereAI API codes into .env.dev
+  - [ ] Rename .env.dev to .env
+  
+- [x] Output data format function first draft
     - [x] write a failing test to check if LLM returns date in the format that our Pydantic object expects
     - [x] write first draft of a function 
 
@@ -39,12 +42,19 @@ What day is today? How many days are left until the next Berlin Data Crafters me
    - [ ] Uncomment the `test_meetup_date` that asks "when is the data crafters meetup?" based on some context info in the question
    - [ ] does it pass? this was easy. much easier than date formatting. :)
    - [ ] Add a `context` variable to the prompt and populate it with "The meetup is on 24 April. and today is 21 April 2023. Soon it will be summer." in `test_meetup_date`
-   - [ ] Experiment with the text a bit if you fancy.
+   - [ ] Experiment with changing the text a bit if you fancy.
 
 - [ ] using tools
   - [ ] In the previous step we spoon fed the context to the prompt. In the next step let's teach the agent to find the context automatically
+  - [ ] Write tests and use this code in a small function
+   ```python
+    tools = load_tools(["serpapi", "llm-math"], llm=my_llm)
+    agent = initialize_agent(tools, llm_agent, agent="zero-shot-react-description", verbose=True)
+    output = agent.run(question)
+    ```
+
   
+- [ ] create our own tools 
   - [ ] let's wrap our date extractor code as a Langchain tool describe it as "DateExtractor: use it when you need to answer a question with a date."
-  - [ ] serpapi is a search engine
-  - [ ] give both tools to the agent and see what it does
+  - [ ] give both tools to the agent and see what it does, via `tools = load_tools(["serpapi", "date-extractor"])`
   
