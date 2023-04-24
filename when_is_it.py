@@ -9,8 +9,10 @@ import langchain
 from langchain import LLMChain, PromptTemplate
 from langchain.llms.cohere import Cohere
 from langchain.llms.openai import OpenAI
-from langchain.output_parsers import ResponseSchema, StructuredOutputParser, OutputFixingParser, PydanticOutputParser
+from langchain.output_parsers import (OutputFixingParser, PydanticOutputParser,
+                                      ResponseSchema, StructuredOutputParser)
 from langchain.prompts import FewShotPromptTemplate
+
 
 class Answer(BaseModel):
     answer_date: date = Field(description="The date that answers the question")
@@ -35,6 +37,9 @@ def get_date_llm_chain():
           'answer': "1999-03-14"},
         {'question': "What is your friend's favourite date?",
           'answer': "1991-01-01"},
+        {'question': "When is Labour Day in 1990?",
+          'answer': "1990-05-01"},
+
 
 
           ]

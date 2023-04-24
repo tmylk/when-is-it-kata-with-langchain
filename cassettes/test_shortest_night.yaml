@@ -1,0 +1,222 @@
+interactions:
+- request:
+    body: '{"model": null, "prompt": "You are a helpful AI assisant answering only
+      the questions that you were asked. \n    The answers are concise and to the
+      point. If you don''t know, just say \"I don''t know\".\n\n    The correct date
+      format is YYYY-MM-DD., e.g. 2020-02-24.\n\n    \n\nQuestion: When is your birthday?
+      Answer: 2020-02-24  \n\n\nQuestion: What is your favourite date? Answer: 1999-03-14  \n\n\nQuestion:
+      What is your friend''s favourite date? Answer: 1991-01-01  \n\n\nQuestion: What
+      date was the shortest night of the year in the Northern hemisphere in 2001?
+      Answer:", "prompt_vars": {}, "preset": null, "num_generations": null, "max_tokens":
+      10, "temperature": 0.75, "k": 0, "p": 1, "frequency_penalty": 0.0, "presence_penalty":
+      0.0, "end_sequences": null, "stop_sequences": null, "return_likelihoods": null,
+      "truncate": null, "logit_bias": {}, "stream": false}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '868'
+      Content-Type:
+      - application/json
+      Request-Source:
+      - python-sdk
+      User-Agent:
+      - User-Agent-DUMMY
+      authorization:
+      - authorization-DUMMY
+    method: POST
+    uri: https://api.cohere.ai/v1/generate
+  response:
+    body:
+      string: '{"id":"1a2d0f7a-817f-4789-bc4e-e1ad69fa7923","generations":[{"id":"d05877df-153a-4dd0-9680-47a285e66dae","text":"
+        2001-06-21  \n\nQuestion:"}],"prompt":"You are a helpful AI assisant answering
+        only the questions that you were asked. \n    The answers are concise and
+        to the point. If you don''t know, just say \"I don''t know\".\n\n    The correct
+        date format is YYYY-MM-DD., e.g. 2020-02-24.\n\n    \n\nQuestion: When is
+        your birthday? Answer: 2020-02-24  \n\n\nQuestion: What is your favourite
+        date? Answer: 1999-03-14  \n\n\nQuestion: What is your friend''s favourite
+        date? Answer: 1991-01-01  \n\n\nQuestion: What date was the shortest night
+        of the year in the Northern hemisphere in 2001? Answer:","meta":{"api_version":{"version":"1"}}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Via:
+      - 1.1 google
+      content-length:
+      - '739'
+      content-type:
+      - application/json
+      date:
+      - Mon, 24 Apr 2023 15:58:44 GMT
+      num_chars:
+      - '551'
+      vary:
+      - Origin
+      x-endpoint-monthly-call-limit:
+      - '5000'
+      x-ratelimit-limit:
+      - '10000000'
+      x-ratelimit-remaining:
+      - '9999999'
+      x-ratelimit-reset:
+      - '1674403260'
+      x-trial-endpoint-call-limit:
+      - '5'
+      x-trial-endpoint-call-remaining:
+      - '4'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"model": null, "prompt": "You are a helpful AI assisant answering only
+      the questions that you were asked. \n    The answers are concise and to the
+      point. If you don''t know, just say \"I don''t know\".\n\n    The correct date
+      format is YYYY-MM-DD., e.g. 2020-02-24.\n\n    \n\nQuestion: When is your birthday?
+      Answer: 2020-02-24  \n\n\nQuestion: What is your favourite date? Answer: 1999-03-14  \n\n\nQuestion:
+      What is your friend''s favourite date? Answer: 1991-01-01  \n\n\nQuestion: When
+      is Labour Day in 1990? Answer: 1990-05-01  \n\n\nQuestion: What date was the
+      shortest night of the year in the Northern hemisphere in 2001? Answer:", "prompt_vars":
+      {}, "preset": null, "num_generations": null, "max_tokens": 10, "temperature":
+      0.75, "k": 0, "p": 1, "frequency_penalty": 0.0, "presence_penalty": 0.0, "end_sequences":
+      null, "stop_sequences": null, "return_likelihoods": null, "truncate": null,
+      "logit_bias": {}, "stream": false}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '932'
+      Content-Type:
+      - application/json
+      Request-Source:
+      - python-sdk
+      User-Agent:
+      - User-Agent-DUMMY
+      authorization:
+      - authorization-DUMMY
+    method: POST
+    uri: https://api.cohere.ai/v1/generate
+  response:
+    body:
+      string: '{"id":"e936ae55-b06b-40f8-aa86-6169d4db14cd","generations":[{"id":"2fd0f12f-c402-4910-b45f-055d490dd11f","text":"
+        2001-11-22  \n\nQuestion:"}],"prompt":"You are a helpful AI assisant answering
+        only the questions that you were asked. \n    The answers are concise and
+        to the point. If you don''t know, just say \"I don''t know\".\n\n    The correct
+        date format is YYYY-MM-DD., e.g. 2020-02-24.\n\n    \n\nQuestion: When is
+        your birthday? Answer: 2020-02-24  \n\n\nQuestion: What is your favourite
+        date? Answer: 1999-03-14  \n\n\nQuestion: What is your friend''s favourite
+        date? Answer: 1991-01-01  \n\n\nQuestion: When is Labour Day in 1990? Answer:
+        1990-05-01  \n\n\nQuestion: What date was the shortest night of the year in
+        the Northern hemisphere in 2001? Answer:","meta":{"api_version":{"version":"1"}}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Via:
+      - 1.1 google
+      content-length:
+      - '803'
+      content-type:
+      - application/json
+      date:
+      - Mon, 24 Apr 2023 16:02:35 GMT
+      num_chars:
+      - '612'
+      vary:
+      - Origin
+      x-endpoint-monthly-call-limit:
+      - '5000'
+      x-ratelimit-limit:
+      - '10000000'
+      x-ratelimit-remaining:
+      - '9999998'
+      x-ratelimit-reset:
+      - '1674403260'
+      x-trial-endpoint-call-limit:
+      - '5'
+      x-trial-endpoint-call-remaining:
+      - '3'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"model": null, "prompt": "You are a helpful AI assisant answering only
+      the questions that you were asked. \n    The answers are concise and to the
+      point. If you don''t know, just say \"I don''t know\".\n\n    The correct date
+      format is YYYY-MM-DD., e.g. 2020-02-24.\n\n    \n\nQuestion: When is your birthday?
+      Answer: 2020-02-24  \n\n\nQuestion: What is your favourite date? Answer: 1999-03-14  \n\n\nQuestion:
+      What is your friend''s favourite date? Answer: 1991-01-01  \n\n\nQuestion: When
+      is Labour Day in 1990? Answer: 1990-05-01  \n\n\nQuestion: What date was the
+      Independence day in USA in 2001? Answer:", "prompt_vars": {}, "preset": null,
+      "num_generations": null, "max_tokens": 10, "temperature": 0.75, "k": 0, "p":
+      1, "frequency_penalty": 0.0, "presence_penalty": 0.0, "end_sequences": null,
+      "stop_sequences": null, "return_likelihoods": null, "truncate": null, "logit_bias":
+      {}, "stream": false}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '902'
+      Content-Type:
+      - application/json
+      Request-Source:
+      - python-sdk
+      User-Agent:
+      - User-Agent-DUMMY
+      authorization:
+      - authorization-DUMMY
+    method: POST
+    uri: https://api.cohere.ai/v1/generate
+  response:
+    body:
+      string: '{"id":"224ef130-0920-4599-83bc-90832f2608fe","generations":[{"id":"92fd8867-8b3a-4d1b-a391-be26d95caf99","text":"
+        2001-07-04  \n\nQuestion:"}],"prompt":"You are a helpful AI assisant answering
+        only the questions that you were asked. \n    The answers are concise and
+        to the point. If you don''t know, just say \"I don''t know\".\n\n    The correct
+        date format is YYYY-MM-DD., e.g. 2020-02-24.\n\n    \n\nQuestion: When is
+        your birthday? Answer: 2020-02-24  \n\n\nQuestion: What is your favourite
+        date? Answer: 1999-03-14  \n\n\nQuestion: What is your friend''s favourite
+        date? Answer: 1991-01-01  \n\n\nQuestion: When is Labour Day in 1990? Answer:
+        1990-05-01  \n\n\nQuestion: What date was the Independence day in USA in 2001?
+        Answer:","meta":{"api_version":{"version":"1"}}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Via:
+      - 1.1 google
+      content-length:
+      - '773'
+      content-type:
+      - application/json
+      date:
+      - Mon, 24 Apr 2023 16:04:30 GMT
+      num_chars:
+      - '582'
+      vary:
+      - Origin
+      x-endpoint-monthly-call-limit:
+      - '5000'
+      x-ratelimit-limit:
+      - '10000000'
+      x-ratelimit-remaining:
+      - '9999997'
+      x-ratelimit-reset:
+      - '1674403260'
+      x-trial-endpoint-call-limit:
+      - '5'
+      x-trial-endpoint-call-remaining:
+      - '2'
+    status:
+      code: 200
+      message: OK
+version: 1
