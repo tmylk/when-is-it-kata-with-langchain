@@ -12,7 +12,7 @@ Overall task: Create a tool to answer questions where the answer to that questio
     - [ ] see the http requests recorded in `cassettes` folder. They are recorded using  [vcr.py](https://vcrpy.readthedocs.io/en/latest/index.html) library. This library stops us from bombarding the external API with requests. It blocks repeated requests and plays back the recorded reply instead.
     - [ ] So the output format is still wrong. Maybe it is because we are using a bad LLM? Let's change the LLM in `get_llm` from cohere to OpenAI
     - [ ] Ok, now we get VCR library error.
-    - [ ] Read the library docs to find out when does it update the recording? When does it add new episodes to the cassette? Change the record_mode for `test_get_todays_date` as needed.
+    - [ ] Read the library docs to find out when does it update the recording? When does it add new episodes to the cassette? Change the record_mode for `test_independence_day` as needed.
     - [ ] Hmm. Still no luck with the format. Let's change back to Cohere - it is free. For OpenAI API you actually have to pay.
 
 
@@ -35,7 +35,7 @@ Overall task: Create a tool to answer questions where the answer to that questio
   - [ ] I would rather bring back the wonderful `split("\n")[0]` instead of paying. Switch back to Cohere and do the split.
 
   - [ ] Now we are satisfied with this test, let's delete the cassette, then set record_mode='all' for one run to re-record
-  - [ ] To make sure we don't record anything above the `test_get_todays_date` let's set record_mode='none' and move on.
+  - [ ] To make sure we don't record anything above the `test_independence_day` let's set record_mode='none' and move on.
 
  - [ ] Question Answering from context
    - [ ] So far, we used the information already in the model. Now let's try to answer questions about a text in the prompt.
